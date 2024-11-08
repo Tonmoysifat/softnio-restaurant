@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .marforsmlap{
+        margin-left: 508px !important;
+    }
+    .heading{
+        font-size: 59px;
+    }
+}
 @layer utilities {
     .bg-color {
         background-color: #BD1F17;
@@ -32,15 +41,17 @@
     }
 
     .hero_container {
-        @apply w-full flex flex-col items-center bg-color min-h-[530px] bg-image px-6 pb-[1rem] lg:px-20;
+        @apply w-full flex flex-col items-center bg-color min-h-[530px] bg-image mt-[80px] px-6 lg:px-20;
     }
 
-    .tableBooking_container{
-        @apply w-full flex flex-col  min-h-[788px] mt-[120px] lg:mt-0 bg-TableBookingImage px-6 pb-[1rem] lg:px-20;
+    .tableBooking_container {
+        @apply w-full flex flex-col  min-h-[788px] mt-[120px] lg:mt-[-60px] bg-TableBookingImage px-6 pb-[1rem] lg:px-20;
     }
-    .footer_container{
-        @apply w-full flex flex-col items-center min-h-[788px]  py-[120px] mt-[120px] bg-FooterImage px-6 lg:px-20 absolute;
+
+    .footer_container {
+        @apply w-full flex flex-col items-center min-h-[788px] py-[120px] lg:mt-[-310px] mt-[120px] bg-FooterImage px-6 lg:px-20 absolute;
     }
+
     .heading {
         @apply uppercase font-bold lg:bg-text-color pr-6 py-3 text-white sm:text-[82px] sm:leading-[90px] text-[36px] leading-[46px] max-w-5xl mt-[32px] lg:mt-[7.25rem];
     }
@@ -52,7 +63,7 @@
 }
 
 @layer base {
-  :root {
+    :root {
         --background: 0 0% 100%;
         --foreground: 0 0% 3.9%;
         --card: 0 0% 100%;
@@ -80,7 +91,8 @@
         --radius: 0.5rem;
 
     }
-  .dark {
+
+    .dark {
         --background: 0 0% 3.9%;
         --foreground: 0 0% 98%;
         --card: 0 0% 3.9%;
@@ -111,12 +123,13 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
+    * {
+        @apply border-border;
 
     }
-  body {
-    @apply bg-background text-foreground;
+
+    body {
+        @apply bg-background text-foreground;
 
     }
 

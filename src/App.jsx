@@ -9,14 +9,14 @@ import Footer from "./components/Footer.jsx";
 export default function App() {
     return (
         <>
+            <AppNavbar/>
             <section className="hero_container">
-                <AppNavbar/>
                 <HeroSectionItems/>
             </section>
             <section>
                 <Features/>
             </section>
-            <section className="bg-[#FBF7F2]">
+            <section className="bg-[#FBF7F2] lg:mt-[-120px] mt-[120px]">
                 <PopularFoodItems/>
             </section>
             <section className="tableBooking_container">

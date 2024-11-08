@@ -13,7 +13,7 @@ const HeroSectionItems = () => {
                         EXPLORE MENU
                     </button>
                 </div>
-                <div className="lg:ml-[708px]">
+                <div className="lg:ml-[708px] marforsmlap">
                     <div>
                         <img src="/images/star.svg" width={45} height={45}
                              className="ml-auto relative top-[12px] right-1 lg:left-[24px]"/>

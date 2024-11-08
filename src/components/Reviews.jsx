@@ -135,7 +135,7 @@ const PrevArrow = ({ onClick, isActive }) => (
 
 const NextArrowMobile = ({onClick}) => (
     <button
-        className="absolute top-[330px] left-[56%] transform -translate-x-1/2
+        className="absolute flex justify-center items-center top-[330px] left-[56%] transform -translate-x-1/2
          sm:flex lg:hidden bg-white shadow-lg w-[38px] h-[38px] rounded-full text-red-600 z-10"
         onClick={onClick}
     >
@@ -146,7 +146,7 @@ const NextArrowMobile = ({onClick}) => (
 // Mobile Previous Arrow (bottom center)
 const PrevArrowMobile = ({onClick, isActive}) => (
     <button
-        className={`absolute top-[330px] left-[42%] transform -translate-x-1/2 sm:flex lg:hidden bg-white shadow-lg w-[38px] h-[38px] rounded-full ${isActive ? 'text-red-600' : 'text-gray-700'} z-10`}
+        className={`absolute top-[330px] flex justify-center items-center left-[42%] transform -translate-x-1/2 sm:flex lg:hidden bg-white shadow-lg w-[38px] h-[38px] rounded-full ${isActive ? 'text-red-600' : 'text-gray-700'} z-10`}
         onClick={onClick}
     >
         <span className="text-4xl leading-[1.5rem]">‹</span>

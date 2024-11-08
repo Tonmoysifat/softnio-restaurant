@@ -7,7 +7,7 @@ const Features = () => {
     };
     return (
         <>
-            <div className="pt-[120px] px-6 pb-[1rem] lg:px-20 max-w-[1349px] m-auto">
+            <div className="pt-[120px] px-6 lg:px-20 max-w-[1349px] m-auto">
                 <div className="grid lg:grid-cols-2 gap-12 mb-[70px]">
                     {/*<div>*/}
                     <img src="/images/feature.png" className="object-cover w-full" alt="Feature"/>

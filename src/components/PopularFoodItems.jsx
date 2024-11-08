@@ -77,7 +77,7 @@ const PopularFoodItems = () => {
 
     return (
         <>
-            <div className="pt-[120px] px-6 lg:px-20 pb-8 max-w-[1389px] m-auto">
+            <div className="pt-[120px] px-6 lg:px-20 max-w-[1389px] m-auto">
                 <h3 className="text-red-600 font-bold text-lg flex items-center">
                     <img src="/images/Rectangle%204708.svg" className="me-2"/>
                     Crispy, Every Bite Taste
