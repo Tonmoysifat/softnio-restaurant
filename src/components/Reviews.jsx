@@ -36,7 +36,7 @@ const Reviews = () => {
         arrows: true,
         nextArrow: <NextArrow onClick={() => setPrevArrowActive(true)}/>,
         prevArrow: <PrevArrow isActive={prevArrowActive} onClick={() => setPrevArrowActive(false)}/>,
-        responsive:[
+        responsive: [
             {
                 breakpoint: 1024,
                 settings: {
@@ -67,6 +67,9 @@ const Reviews = () => {
                             {reviews.map((review, index) => (
                                 <div key={index} className="p-6 bg-[#FEBF00]
                             h-full flex justify-center flex-col lg:p-[117px]">
+                                    <div className="relative">
+                                        <img src="/images/in.svg" className="absolute bottom-[5px] left-[-25px]"/>
+                                    </div>
                                     <p className="text-lg font-medium">{review.text}</p>
                                     <div className="flex items-center justify-between mt-16 lg:mt-[75px]">
                                         <div>
@@ -122,7 +125,7 @@ const NextArrow = ({onClick}) => (
     </button>
 );
 
-const PrevArrow = ({ onClick, isActive }) => (
+const PrevArrow = ({onClick, isActive}) => (
     <button
         className={`absolute bg-white hidden sm:block shadow-lg w-[38px] h-[38px] rounded-full lg:top-[-3.4rem] xl:top-[-6.75rem] lg:left-[46rem] xl:left-[66rem] ${isActive ? 'text-red-600' : 'text-gray-700'} z-10`}
         onClick={onClick}

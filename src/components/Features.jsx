@@ -59,7 +59,7 @@ const Features = () => {
                                 ) : activeTab === "Experience" ? (
                                     <>
                                         <h1 className="text-4xl font-bold leading-tight my-5">
-                                            EXCEPTIONAL CULINARY EXPERIENCE AND DELICIOUS FOOD22
+                                            A JOURNEY OF TASTE, ELEGANCE, AND EXCELLENCE
                                         </h1>
                                         <p className="text-gray-400 mb-6">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est
@@ -70,7 +70,7 @@ const Features = () => {
                                 ) : (
                                     <>
                                         <h1 className="text-4xl font-bold leading-tight my-5">
-                                            EXCEPTIONAL CULINARY EXPERIENCE AND DELICIOUS FOOD33
+                                            CREATING MEMORABLE MOMENTS WITH EVERY MEAL
                                         </h1>
                                         <p className="text-gray-400 mb-6">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est
