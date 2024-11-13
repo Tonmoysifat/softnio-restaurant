@@ -10,6 +10,9 @@
     .heading{
         font-size: 59px;
     }
+    .mlforsmlap{
+        margin-left: 40px !important;
+    }
 }
 @layer utilities {
     .bg-color {

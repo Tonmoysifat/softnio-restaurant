@@ -24,7 +24,7 @@ const AppNavbar = () => {
     return (
         <div
             className="navbar justify-center w-full bg-image bg-color fixed top-0 px-6 lg:px-20 text-white py-5 z-[999]">
-            <div className="contents">
+            <div className="w-[1200px]">
                 <div className="navbar-start w-full lg:w-[210px] flex !justify-between">
                     <div className="flex lg:pb-1">
                         <img src="/images/logo.svg" alt="logo"/>
@@ -47,7 +47,7 @@ const AppNavbar = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-center hidden lg:flex mlforsmlap">
                     <ul className="menu menu-horizontal px-1">
                         <li><NavLink to="/home">Home</NavLink></li>
                         <li><NavLink to="/about">About</NavLink></li>
