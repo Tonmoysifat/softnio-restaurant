@@ -51,65 +51,69 @@ const Reviews = () => {
     };
     return (
         <>
-
-            <div className="px-6 lg:px-20 pb-8 pt-[120px] max-w-[1349px] m-auto">
-                <div className="mb-[60px]">
-                    <h3 className="text-red-600 font-bold text-lg flex items-center">
-                        <img src="/images/Rectangle%204708.svg" className="me-2"/>
-                        Crispy, Every Bite Taste
-                    </h3>
-                    <h2 className="text-3xl lg:text-5xl font-bold mb-8 uppercase mt-[16px]">What Some of my Customers
-                        Say
-                    </h2>
-                </div>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-[-1px]">
-                    <div className="order-2 lg:order-1 relative">
-                        <Slider {...settings}>
-                            {reviews.map((review, index) => (
-                                <div key={index} className="p-6 bg-[#FEBF00]
+            <section>
+                <div className="px-6 lg:px-20 pb-8 pt-[120px] max-w-[1349px] m-auto">
+                    <div className="mb-[60px]">
+                        <h3 className="text-red-600 font-bold text-lg flex items-center">
+                            <img src="/images/Rectangle%204708.svg" className="me-2"/>
+                            Crispy, Every Bite Taste
+                        </h3>
+                        <h2 className="text-3xl lg:text-5xl font-bold mb-8 uppercase mt-[16px]">What Some of my
+                            Customers
+                            Say
+                        </h2>
+                    </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-[-1px]">
+                        <div className="order-2 lg:order-1 relative">
+                            <Slider {...settings}>
+                                {reviews.map((review, index) => (
+                                    <div key={index} className="p-6 bg-[#FEBF00]
                             h-full flex justify-center flex-col lg:p-[117px]">
-                                    <div className="relative">
-                                        <img src="/images/in.svg" className="absolute bottom-[5px] left-[-25px]"/>
-                                    </div>
-                                    <p className="text-lg font-medium">{review.text}</p>
-                                    <div className="flex items-center justify-between mt-16 lg:mt-[75px]">
-                                        <div>
-                                            <p className="text-[16px] uppercase font-bold">{review.author}</p>
-                                            <p className="text-xs">{review.location}</p>
+                                        <div className="relative">
+                                            <img src="/images/in.svg" className="absolute bottom-[5px] left-[-25px]"/>
                                         </div>
-                                        <div className="">
-                                            <img src={review.img} alt="Author" className="rounded-none"/>
-                                            <div className="border-b-[3px] border-red-600 mt-4 mx-auto w-10"></div>
+                                        <p className="text-lg font-medium">{review.text}</p>
+                                        <div className="flex items-center justify-between mt-16 lg:mt-[75px]">
+                                            <div>
+                                                <p className="text-[16px] uppercase font-bold">{review.author}</p>
+                                                <p className="text-xs">{review.location}</p>
+                                            </div>
+                                            <div className="">
+                                                <img src={review.img} alt="Author" className="rounded-none"/>
+                                                <div className="border-b-[3px] border-red-600 mt-4 mx-auto w-10"></div>
+                                            </div>
                                         </div>
+                                        <hr className="border-black h-[2px] mt-0"/>
                                     </div>
-                                    <hr className="border-black h-[2px] mt-0"/>
-                                </div>
-                            ))}
-                        </Slider>
-                        <div className="absolute bottom-[50px]">
-                            <img src="/images/Group.svg"/>
-                        </div>
+                                ))}
+                            </Slider>
+                            <div className="absolute bottom-[50px]">
+                                <img src="/images/Group.svg"/>
+                            </div>
 
-                    </div>
-                    <div className="order-1 lg:order-2 relative right-0 lg:right-[3px]">
-                        <img
-                            src="/images/thumbnail.png"
-                            alt="Video Thumbnail"
-                            className="w-full h-[102%] lg:h-[101%] object-cover"
-                        />
-                        <button
-                            className="absolute top-[46%] left-[46%] p-3 bg-yellow-500 rounded-full text-black hover:bg-yellow-600 focus:outline-none"
-                        >
-                            <FaPlay size={20}/>
-                        </button>
+                        </div>
+                        <div className="order-1 lg:order-2 relative right-0 lg:right-[3px]">
+                            <img
+                                src="/images/thumbnail.png"
+                                alt="Video Thumbnail"
+                                className="w-full h-[102%] lg:h-[101%] object-cover"
+                            />
+                            <button
+                                className="absolute top-[46%] left-[46%] p-3 bg-yellow-500 rounded-full text-black hover:bg-yellow-600 focus:outline-none"
+                            >
+                                <FaPlay size={20}/>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="relative bottom-[320px] hidden lg:block">
-                <img src="/images/12.png" className="w-[150px] ml-auto"/>
-            </div>
-            <div className="relative bottom-[850px] hidden lg:block">
-                <img src="/images/221.png" className="w-[100px]"/>
+            </section>
+            <div className="relative hidden lg:block">
+                <div className="absolute right-0 bottom-[150px]">
+                    <img src="/images/12.png" className="w-[150px]"/>
+                </div>
+                <div className="absolute left-0 bottom-[440px] hidden lg:block">
+                    <img src="/images/221.png" className="w-[100px]"/>
+                </div>
             </div>
         </>
     )

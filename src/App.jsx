@@ -10,24 +10,12 @@ export default function App() {
     return (
         <>
             <AppNavbar/>
-            <section className="hero_container">
-                <HeroSectionItems/>
-            </section>
-            <section>
-                <Features/>
-            </section>
-            <section className="bg-[#FBF7F2] lg:mt-[-120px] mt-[120px]">
-                <PopularFoodItems/>
-            </section>
-            <section className="tableBooking_container">
-                <TableBooking/>
-            </section>
-            <section>
-                <Reviews/>
-            </section>
-            <section className="footer_container">
-                <Footer/>
-            </section>
+            <HeroSectionItems/>
+            <Features/>
+            <PopularFoodItems/>
+            <TableBooking/>
+            <Reviews/>
+            <Footer/>
         </>
 
     )

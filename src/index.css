@@ -28,7 +28,7 @@
     .bg-TableBookingImage {
         background-image: url("/images/TableBooking.png");
         background-position: center;
-        background-repeat: repeat;
+        background-repeat: repeat-x;
     }
 
     .bg-FooterImage {
@@ -42,17 +42,51 @@
     .bg-text-color {
         background: linear-gradient(to left, rgb(162 14 0) -223%, rgb(122 25 16 / 0%) 100%);
     }
-
+    .app-btn{
+        @apply uppercase btn bg-[#FEBF00] border-0 rounded-none font-bold px-6 hover:bg-[#FEBF00] cursor-pointer
+    }
+    .appNavbar{
+        @apply navbar justify-center w-full bg-image bg-color fixed top-0 px-6 lg:px-20 text-white py-5 z-[999]
+    }
+    .navbar-logo{
+        @apply navbar-start w-full lg:w-[210px] flex justify-between
+    }
+    .logo-text{
+        @apply btn btn-ghost text-2xl pl-[0.3rem]
+    }
+    .mobile-menu{
+        @apply dropdown-content menu-sm right-0 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow
+    }
+    .desktop-menu{
+        @apply navbar-center hidden lg:flex mlforsmlap
+    }
     .hero_container {
         @apply w-full flex flex-col items-center bg-color min-h-[530px] bg-image mt-[80px] px-6 lg:px-20;
     }
-
+    .today-offer-1st-div{
+        @apply ml-auto relative bottom-[100px] right-1 lg:left-[50px] bg-yellow-400 rounded-full w-24 h-24 flex justify-center items-center
+    }
+    .today-offer-2nd-div{
+        @apply border-2 w-20 h-20 border-dotted border-red-600 rounded-full flex justify-center items-center
+    }
+    .features_tab_active{
+        @apply px-3 py-1 font-bold text-white bg-[#BD1F17]
+    }
+    .features_tab_inactive{
+        @apply px-3 py-1 font-bold text-black
+    }
+    .features_icon{
+        @apply w-[90px] h-[90px] rounded-full shadow-xl flex items-center justify-center me-3
+    }
+    .popular_food_container{
+        @apply bg-[#FBF7F2] mt-[120px]
+    }
     .tableBooking_container {
-        @apply w-full flex flex-col  min-h-[788px] mt-[120px] lg:mt-[-60px] bg-TableBookingImage px-6 pb-[1rem] lg:px-20;
+        @apply w-full flex flex-col min-h-[788px] bg-TableBookingImage px-6 lg:px-20;
     }
 
     .footer_container {
-        @apply w-full flex flex-col items-center min-h-[788px] py-[120px] lg:mt-[-310px] mt-[120px] bg-FooterImage px-6 lg:px-20 absolute;
+        @apply w-full flex flex-col items-center min-h-[788px] py-[120px] mt-[120px] bg-FooterImage px-6 lg:px-20 absolute;
     }
 
     .heading {
